@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Fixing Capitalization</title>
+    </head>
+    <body>
+        <h2>Fixing Capitalization</h2>
+        <div class="output">
+            <ul></ul>
+        </div>
+        <script>
+            const list =document.querySelector('.output ul');
+            list.innerHTML = '';
+            let cities=['NepalGunj' ,'ButWal', 'DanG', 'KtM'];
+            for(let i=0;i<cities.length;i++){
+                let lowerCase = cities[i].toLowerCase();
+                let firstLet = cities[i].slice(0,1);
+                let final =firstLet.toUpperCase();
+                let ListItem =document.createElement('li');
+                ListItem.textContent=final;
+                list.appendChild(ListItem);
+            
+            }
+        </script>
+    </body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Fixing Capitalization</title>
+    </head>
+    <body>
+        <h2>Fixing Capitalization</h2>
+        <div class="output">
+            <ul></ul>
+        </div>
+        <script>
+            const list = document.querySelector('.output ul');
+            list.innerHTML = '';
+            let cities = ['NepalGunj', 'ButWal', 'DanG', 'KtM'];
+            
+            for (let i = 0; i < cities.length; i++) {
+                let city = cities[i];
+                let capitalizedCity = city.charAt(0).toUpperCase() + city.slice(1).toLowerCase();
+                let listItem = document.createElement('li');
+                listItem.textContent = capitalizedCity;
+                list.appendChild(listItem);
+            }
+        </script>
+    </body>
+</html>
