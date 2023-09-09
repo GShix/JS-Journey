@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object & Array</title>
+</head>
+<body>
+    <h2>Object and Array</h2>
+</body>
+<script>
+    
+    // Object
+    let animal={
+        name:"Dog",
+        leg:5
+    }
+    document.write("<br> Objects: <br>")
+    document.write(animal.leg); //dot_notation
+
+    /* document.write(animal) */
+
+    //
+    let legsNum="leg";
+    document.write("<hr>")
+    document.write(animal[legsNum]) //Bracket_notation
+
+    // Array
+    document.write("<hr> Array: <br> The books are: ")
+    let bookArr = ['DAA', ' Web Tech', ' SAD', ' SAM', ' Ethics', ' Cryotography'];
+    document.write(bookArr);
+    document.write("<br> The Length of bookArr is: ")
+    document.write(bookArr.length);
+
+    // Function
+    function doWork(){
+        document.write("<hr> Function: <br>")
+        document.write("Drink water at least 4li/day")
+    }
+    doWork();
+</script>
+</html>

@@ -16,7 +16,7 @@
             for (let i = 0; i < cities.length; i++) {
                 let city = cities[i];
                 let capitalizedCity = city.charAt(0).toUpperCase() + city.slice(1).toLowerCase();
-                // let listItem = document.createElement('li');
+                let listItem = document.createElement('li');
                 listItem.textContent = capitalizedCity;
                 list.appendChild(listItem);
             }
