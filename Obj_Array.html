@@ -12,9 +12,20 @@
     
     // Object
     let animal={
-        name:"Dog",
-        leg:5
+        name:"Dog", //properties
+        leg:5,
+        // Nesting in Object's properties
+        child: {
+            genetic_type: "This is Local genetic."
+        },
+        // Function inside the object -> METHOD 
+        health() {
+            document.write("It is purely Healthy now.")
+        }
     }
+    console.log(animal); // access all the object's properties
+    animal.health(); // Call health() function 
+    
     document.write("<br> Objects: <br>")
     document.write(animal.leg); //dot_notation
 
