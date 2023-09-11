@@ -67,11 +67,27 @@
         return{
             title:title,
             enroll(){
-                document.write("You are successfully enrolled.");
+                document.write("You are successfully enrolled. <br>");
+                document.write(`Title: Yours enrolled course is ${title} `);
             }
         }
     }
     const newCourse = createCourse('JS'); 
     newCourse.enroll()
+
+    
+    // Create new function
+    document.write("<hr>Create new function<br>");
+    newCourse.checkEnrollment= function(){
+        document.write("20 Users are enrolled.")
+    }
+    newCourse.checkEnrollment();
+
+    // Delete property of Object
+    document.write("<hr>Delete property of Object: <br>")
+    delete newCourse.enroll;
+    newCourse.enroll();
+    
+    
 </script>
 </html>
