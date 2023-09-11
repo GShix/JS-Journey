@@ -49,5 +49,29 @@
         document.write("Drink water at least 4li/day")
     }
     doWork();
+
+    // Constructor Function
+    document.write("<hr> Constructor Function: <br>")
+    function Course(title){  // -> Class type Functio  -> Pascal Case 
+        this.title = title,
+        this.enroll = function(){
+            document.write("You are successfully enrolled.");
+        }
+    }
+    const course = new Course('JS'); // new create a virtual object and stores 
+    course.enroll();
+
+    // Factory Function
+    document.write("<hr>Factory Function: <br>")
+    function createCourse(title){  // Camel Case 
+        return{
+            title:title,
+            enroll(){
+                document.write("You are successfully enrolled.");
+            }
+        }
+    }
+    const newCourse = createCourse('JS'); 
+    newCourse.enroll()
 </script>
 </html>
