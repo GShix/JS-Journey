@@ -24,6 +24,19 @@ console.log(num1); // -> Deleted '10'
 console.log(num1.shift(0));
 console.log(num1); // -> Deleted '0'
 
-// Update arr_items by their "Indexs"
+// Update arr_items by their "Indexs"                                                                                                                                            
 num1[0] = 0; /* String: "Dambar" | Object: {num1: 80} */
 console.log(num1); // -> Updated array with '0' at the '0'th index
+
+// IndexOf 
+let num2= ["Minraj", "Dambar", "Santosh", "Nabin","Dmabar", "Minraj"];
+console.log(num2.indexOf("Dambar")) // -> Returns First met item's index
+console.log(num2.indexOf('Syana')); // -> Syana is not in num2, so it returns "-1"
+
+// lastIndexOf()
+console.log(num2.lastIndexOf("Minraj"));
+
+// includes()
+console.log(num2.includes("Nabin")); // -> Reutrns "true" | check whole arr_indexes
+// To check it after a certain index
+console.log(num2.includes("Santosh",3)); // -> Returns "false" as there is no "Santosh" after index '3'
