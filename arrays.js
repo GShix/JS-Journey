@@ -70,12 +70,22 @@ console.log(arry1.find((Element) => {
 console.log(arry1.find(element => element.name === "Dambar"));
 
 // Spread operator -> Copy all/part if an existing arr/obj to another arr/obj
-let name1 = ['Harry', 'Ram', 'Krishna'];
+let name1 = ['Harry','Ram','Krishna'];
 let name2 = ['Dambar', 'Santosh', 'Minraj'];
 let nameSum = name1.concat(name2); // Concat method 1
 console.log(nameSum);
 let spreadSum = [...name1, ...name2]; // Concat method 2
 console.log(spreadSum);
-
 // slice() method -> Access items with specified index 
 console.log(spreadSum.slice(2,5));
+
+// join method 
+console.log(name1.join()); // Default
+console.log(name1.join('')); 
+console.log(name1.join('_'));
+
+// split method -> Opposite of join()
+let joinedName = name1.join('-');
+console.log(joinedName.split()); // Default 
+console.log(joinedName.split('')); 
+console.log(joinedName.split('-')); 
