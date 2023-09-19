@@ -44,6 +44,7 @@ console.log(num2.includes("Santosh",3)); // -> Returns "false" as there is no "S
 // find() method
 console.log(num1.find(Element => Element >5)); // -> find method for primiive data type
 
+// For Reference data type
 const arry1 =[{
     name:'Dambar',
     rollno: 1
@@ -61,10 +62,20 @@ console.log(arry1.find(function(Element){
     return Element.rollno ===2
 }))
 
-// Arrow function
+// Arrow function -> First method
 console.log(arry1.find((Element) => {
     return Element.name === 'Dambar'
 }))
+/* Second method */
+console.log(arry1.find(element => element.name === "Dambar"));
 
+// Spread operator -> Copy all/part if an existing arr/obj to another arr/obj
+let name1 = ['Harry', 'Ram', 'Krishna'];
+let name2 = ['Dambar', 'Santosh', 'Minraj'];
+let nameSum = name1.concat(name2); // Concat method 1
+console.log(nameSum);
+let spreadSum = [...name1, ...name2]; // Concat method 2
+console.log(spreadSum);
 
-
+// slice() method -> Access items with specified index 
+console.log(spreadSum.slice(2,5));
