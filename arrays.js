@@ -40,3 +40,25 @@ console.log(num2.lastIndexOf("Minraj"));
 console.log(num2.includes("Nabin")); // -> Reutrns "true" | check whole arr_indexes
 // To check it after a certain index
 console.log(num2.includes("Santosh",3)); // -> Returns "false" as there is no "Santosh" after index '3'
+
+// find() method
+console.log(num1.find(Element => Element >5)); // -> find method for primiive data type
+
+const arry1 =[{
+    name:'Dambar',
+    rollno: 1
+    },
+    {
+        name: 'Minraj',
+        rollno: 2
+    },
+    {
+        name: 'Nabin',
+        rollno: 3
+    }
+];
+console.log(arry1.find(function(Element){
+    return Element.rollno ===2
+}))
+
+
