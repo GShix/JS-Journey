@@ -61,4 +61,10 @@ console.log(arry1.find(function(Element){
     return Element.rollno ===2
 }))
 
+// Arrow function
+console.log(arry1.find((Element) => {
+    return Element.name === 'Dambar'
+}))
+
+
 
