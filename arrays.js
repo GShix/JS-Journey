@@ -89,3 +89,13 @@ let joinedName = name1.join('-');
 console.log(joinedName.split()); // Default 
 console.log(joinedName.split('')); 
 console.log(joinedName.split('-')); 
+
+//filter() method
+let cities = [
+    {name:'Dang', population: 9838383}
+    {name: 'Nepalgunj', population: 9344343}
+    {name:'Salyan', population: 224924294}
+]
+console.log(cities.filter((city,index)=> {
+    return city.population>200;
+}))
