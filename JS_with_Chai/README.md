@@ -1,6 +1,6 @@
 # JS with Chai
 ### Array in js
-> Methods in Array:
+> ### Day 1: Methods in Array:
  - .push()
  - .pop()
 
