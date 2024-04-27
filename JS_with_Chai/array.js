@@ -12,7 +12,7 @@ const myArr = [1,2,3,4,5,'dambar']
 //splice and slice
 console.log(myArr)
 const newarr1 = myArr.slice(1,3)
-console.log("Array2:",newarr1)
+console.log("Array2:",newarr1) //
 console.log("After slice:",myArr)
 
 const newarr = myArr.splice(1,3);
